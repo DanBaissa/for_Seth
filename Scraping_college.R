@@ -10,7 +10,7 @@ years <- 2015:2019 # select the years that you want
 college_data <- c() #creates an empty dataset
 
 
-drafts <- paste0("https://www.pro-football-reference.com/years/", years, "/draft.htm")
+drafts <- paste0("https://www.pro-football-reference.com/years/", years, "/draft.htm") # This lets us modify the URL text to include the years
 
 for (j in 1:length(drafts)) {
   
