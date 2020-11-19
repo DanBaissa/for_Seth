@@ -43,7 +43,7 @@ for (j in 1:length(drafts)) {
     d <- as.data.frame(tables) %>% # Makes the table into a dataset
       mutate(player = name) %>%
       mutate(draft_year = years[j]) %>% # creates a variable for draft year
-      head(-1) %>%
+      head(-1) %>% # the removes their college career totals. You can remove this if you want that.
       slice(-1)
     
     college_data <- bind_rows(college_data, d)
